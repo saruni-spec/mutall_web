@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutall Building - Prime Commercial Property</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/api/placeholder/100/50" alt="Mutall Building Logo">
+            <span>Mutall Building</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#spaces">Available Spaces</a></li>
+            <li><a href="#tenants">Tenants</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Mutall Building</h1>
+            <p>A Prime Commercial Property Designed for Professional Success. Strategic Location. Diverse Businesses. Exceptional Opportunities.</p>
+            <div class="cta-buttons">
+                <a href="#spaces" class="btn btn-primary">View Available Spaces</a>
+                <a href="#contact" class="btn btn-secondary">Schedule a Tour</a>
+            </div>
+            <img src="./DSC_3310.JPG" title="" alt=""/>
+        </div>
+    </section>
+
+
+    <section class="featured-spaces">
+        <h2>Featured Office Spaces</h2>
+        <p>Discover premium office solutions tailored to your business needs.</p>
+        <div class="featured-spaces-container">
+            <div class="main-space-display">
+                <img id="main-space-image" src="/api/placeholder/800/500" alt="Main Office Space">
+                <div class="space-details">
+                    <h3 id="space-title">Ground Floor Space</h3>
+                    <p id="space-description">100 sq.m | Prime Location | Fully Serviced</p>
+                </div>
+            </div>
+            <div class="space-thumbnails">
+                <div class="thumbnail active" data-image="/api/placeholder/800/500" data-title="Ground Floor Space" data-description="100 sq.m | Prime Location | Fully Serviced">
+                    <img src="/api/placeholder/200/150" alt="Ground Floor Space">
+                </div>
+                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Second Floor Suite" data-description="75 sq.m | Modern Design | Great Lighting">
+                    <img src="/api/placeholder/200/150" alt="Second Floor Suite">
+                </div>
+                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Corner Office" data-description="50 sq.m | Panoramic Views | Flexible Layout">
+                    <img src="/api/placeholder/200/150" alt="Corner Office">
+                </div>
+                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Executive Meeting Room" data-description="40 sq.m | High-Tech Facilities | Boardroom Setup">
+                    <img src="/api/placeholder/200/150" alt="Executive Meeting Room">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <h2>What Our Tenants Say</h2>
+        <p>Hear from businesses thriving in Mutall Building</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Tenant 1">
+                <h3>John Doe</h3>
+                <p>Cooperative Bank Manager</p>
+                <p>"Mutall Building provides the perfect professional environment for our banking services."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Tenant 2">
+                <h3>Jane Smith</h3>
+                <p>Real Estate Agency Owner</p>
+                <p>"Location and facilities here are unmatched. It's been great for our business growth."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Tenant 3">
+                <h3>Mike Johnson</h3>
+                <p>Law Firm Partner</p>
+                <p>"Professional atmosphere and excellent amenities make Mutall Building our ideal workspace."</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Mutall Building. All Rights Reserved.</p>
+        <p>Contact: +254 123 456 7890 | info@mutallbuilding.com</p>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Optional: Add a small animation to hero section on page load
+        window.addEventListener('load', () => {
+            const hero = document.querySelector('.hero');
+            hero.style.opacity = 0;
+            hero.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                hero.style.transition = 'opacity 1s, transform 1s';
+                hero.style.opacity = 1;
+                hero.style.transform = 'translateY(0)';
+            }, 100);
+
+            // Space Thumbnails Interaction
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.getElementById('main-space-image');
+            const spaceTitle = document.getElementById('space-title');
+            const spaceDescription = document.getElementById('space-description');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    // Remove active class from all thumbnails
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked thumbnail
+                    thumbnail.classList.add('active');
+
+                    // Update main image and details
+                    const newImageSrc = thumbnail.getAttribute('data-image');
+                    const newTitle = thumbnail.getAttribute('data-title');
+                    const newDescription = thumbnail.getAttribute('data-description');
+
+                    mainImage.src = newImageSrc;
+                    mainImage.alt = newTitle;
+                    spaceTitle.textContent = newTitle;
+                    spaceDescription.textContent = newDescription;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
