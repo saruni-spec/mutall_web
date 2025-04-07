@@ -5,144 +5,342 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutall Building - Prime Commercial Property</title>
     <link rel="stylesheet" href="web.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="/api/placeholder/100/50" alt="Mutall Building Logo">
+            <img src="" alt="Mutall Building Logo">
             <span>Mutall Building</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
             <li><a href="#spaces">Available Spaces</a></li>
-            <li><a href="#tenants">Tenants</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="contact-btn">Contact</button>
     </nav>
 
-
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Welcome to Mutall Building</h1>
-            <p>A Prime Commercial Property Designed for Professional Success. Strategic Location. Diverse Businesses. Exceptional Opportunities.</p>
+            <h1>GET YOUR PRIME COMMERCIAL SPACE</h1>
+            <p>A Prime Commercial Property designed for professional success. Strategic location. Diverse businesses. Exceptional opportunities.</p>
             <div class="cta-buttons">
                 <a href="#spaces" class="btn btn-primary">View Available Spaces</a>
                 <a href="#contact" class="btn btn-secondary">Schedule a Tour</a>
             </div>
-            <img src="./DSC_3310.JPG" title="" alt=""/>
         </div>
-    </section>
-
-
-    <section class="featured-spaces">
-        <h2>Featured Office Spaces</h2>
-        <p>Discover premium office solutions tailored to your business needs.</p>
-        <div class="featured-spaces-container">
-            <div class="main-space-display">
-                <img id="main-space-image" src="/api/placeholder/800/500" alt="Main Office Space">
-                <div class="space-details">
-                    <h3 id="space-title">Ground Floor Space</h3>
-                    <p id="space-description">100 sq.m | Prime Location | Fully Serviced</p>
-                </div>
+        <img src="./mutall1.jpeg" alt="Mutall Building Exterior" class="hero-image">
+        <div class="arrow-nav">
+            <div class="arrow prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                </svg>
             </div>
-            <div class="space-thumbnails">
-                <div class="thumbnail active" data-image="/api/placeholder/800/500" data-title="Ground Floor Space" data-description="100 sq.m | Prime Location | Fully Serviced">
-                    <img src="/api/placeholder/200/150" alt="Ground Floor Space">
-                </div>
-                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Second Floor Suite" data-description="75 sq.m | Modern Design | Great Lighting">
-                    <img src="/api/placeholder/200/150" alt="Second Floor Suite">
-                </div>
-                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Corner Office" data-description="50 sq.m | Panoramic Views | Flexible Layout">
-                    <img src="/api/placeholder/200/150" alt="Corner Office">
-                </div>
-                <div class="thumbnail" data-image="/api/placeholder/800/500" data-title="Executive Meeting Room" data-description="40 sq.m | High-Tech Facilities | Boardroom Setup">
-                    <img src="/api/placeholder/200/150" alt="Executive Meeting Room">
-                </div>
+            <div class="arrow next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
             </div>
         </div>
     </section>
 
-
-    <section class="testimonials">
-        <h2>What Our Tenants Say</h2>
-        <p>Hear from businesses thriving in Mutall Building</p>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <img src="/api/placeholder/100/100" alt="Tenant 1">
-                <h3>John Doe</h3>
-                <p>Cooperative Bank Manager</p>
-                <p>"Mutall Building provides the perfect professional environment for our banking services."</p>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <h2>Why Choose Mutall Building</h2>
+                <p>Discover the exceptional features that make Mutall Building the perfect choice for your business.</p>
             </div>
-            <div class="testimonial-card">
-                <img src="/api/placeholder/100/100" alt="Tenant 2">
-                <h3>Jane Smith</h3>
-                <p>Real Estate Agency Owner</p>
-                <p>"Location and facilities here are unmatched. It's been great for our business growth."</p>
-            </div>
-            <div class="testimonial-card">
-                <img src="/api/placeholder/100/100" alt="Tenant 3">
-                <h3>Mike Johnson</h3>
-                <p>Law Firm Partner</p>
-                <p>"Professional atmosphere and excellent amenities make Mutall Building our ideal workspace."</p>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Prime Location</h3>
+                    <p>Strategically located with easy access to major roads, business districts, and amenities.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>24/7 Security</h3>
+                    <p>Round-the-clock security services with CCTV surveillance for your peace of mind.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Ample Parking</h3>
+                    <p>Sufficient parking space for tenants and visitors to accommodate your business needs.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>High-Speed Internet</h3>
+                    <p>Reliable high-speed fiber internet connectivity for seamless business operations.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Backup Power</h3>
+                    <p>Uninterrupted power supply with backup generators for continuous operations.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Water Supply</h3>
+                    <p>Consistent water supply with storage tanks to ensure your business runs smoothly.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Available Spaces Section -->
+    <section class="available-spaces" id="spaces">
+        <div class="spaces-container">
+            <div class="section-header">
+                <h2>Available Commercial Spaces</h2>
+                <p>Explore our variety of premium commercial spaces designed to meet your specific business requirements.</p>
+            </div>
+            <div class="spaces-grid">
+                <div class="space-card">
+                    <div class="space-image">
+                        <img src="./IMG_2937.JPG" alt="Office Space A">
+                    </div>
+                    <div class="space-info">
+                        <h3>Executive Office Suite</h3>
+                        <p>Perfect for small to medium businesses seeking a professional environment.</p>
+                        <div class="space-details">
+                            <div class="detail">
+                                <span>1200</span>
+                                <span>Sq. Ft.</span>
+                            </div>
+                            <div class="detail">
+                                <span>3</span>
+                                <span>Rooms</span>
+                            </div>
+                            <div class="detail">
+                                <span>2nd</span>
+                                <span>Floor</span>
+                            </div>
+                        </div>
+                        <div class="space-price">
+                            KSh 75,000/month
+                        </div>
+                        <a href="#contact" class="space-btn">Schedule Viewing</a>
+                    </div>
+                </div>
+                
+                <div class="space-card">
+                    <div class="space-image">
+                        <img src="./IMG_2927.JPG" alt="Office Space B">
+                    </div>
+                    <div class="space-info">
+                        <h3>Retail Space</h3>
+                        <p>High-visibility retail space ideal for customer-facing businesses.</p>
+                        <div class="space-details">
+                            <div class="detail">
+                                <span>800</span>
+                                <span>Sq. Ft.</span>
+                            </div>
+                            <div class="detail">
+                                <span>1</span>
+                                <span>Room</span>
+                            </div>
+                            <div class="detail">
+                                <span>1st</span>
+                                <span>Floor</span>
+                            </div>
+                        </div>
+                        <div class="space-price">
+                            KSh 60,000/month
+                        </div>
+                        <a href="#contact" class="space-btn">Schedule Viewing</a>
+                    </div>
+                </div>
+                
+                <div class="space-card">
+                    <div class="space-image">
+                        <img src="./DSC_3299.JPG" alt="Office Space C">
+                    </div>
+                    <div class="space-info">
+                        <h3>Corporate Headquarters</h3>
+                        <p>Expansive office space suitable for corporate headquarters or large teams.</p>
+                        <div class="space-details">
+                            <div class="detail">
+                                <span>2500</span>
+                                <span>Sq. Ft.</span>
+                            </div>
+                            <div class="detail">
+                                <span>6</span>
+                                <span>Rooms</span>
+                            </div>
+                            <div class="detail">
+                                <span>3rd</span>
+                                <span>Floor</span>
+                            </div>
+                        </div>
+                        <div class="space-price">
+                            KSh 150,000/month
+                        </div>
+                        <a href="#contact" class="space-btn">Schedule Viewing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonial-container">
+            <div class="section-header">
+                <h2>What Our Tenants Say</h2>
+                <p>Hear from businesses that have found success in our commercial spaces.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Moving our business to Mutall Building was one of the best decisions we've made. The location is perfect, the facilities are top-notch, and the management is responsive. Our clients are impressed every time they visit our office."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="" alt="Testimonial Author">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Mwangi</h4>
+                            <p>CEO, TechSolutions Ltd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Interested in our commercial spaces? Contact us for more information or to schedule a viewing.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            123 Main Street, Nairobi, Kenya
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            +254 700 123 456
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            info@mutallbuilding.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="" disabled selected>I'm interested in...</option>
+                            <option value="office-space">Office Space</option>
+                            <option value="retail-space">Retail Space</option>
+                            <option value="viewing">Schedule a Viewing</option>
+                            <option value="information">General Information</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Mutall Building. All Rights Reserved.</p>
-        <p>Contact: +254 123 456 7890 | info@mutallbuilding.com</p>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Mutall Building</h3>
+                    <p>A premier commercial property offering exceptional office and retail spaces in a strategic location.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#spaces">Available Spaces</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Office Spaces</a></li>
+                        <li><a href="#">Retail Spaces</a></li>
+                        <li><a href="#">Meeting Rooms</a></li>
+                        <li><a href="#">Virtual Offices</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 1:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mutall Building. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-
     <script>
-        // Simple smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Optional: Add a small animation to hero section on page load
-        window.addEventListener('load', () => {
-            const hero = document.querySelector('.hero');
-            hero.style.opacity = 0;
-            hero.style.transform = 'translateY(20px)';
-            
-            setTimeout(() => {
-                hero.style.transition = 'opacity 1s, transform 1s';
-                hero.style.opacity = 1;
-                hero.style.transform = 'translateY(0)';
-            }, 100);
-
-            // Space Thumbnails Interaction
-            const thumbnails = document.querySelectorAll('.thumbnail');
-            const mainImage = document.getElementById('main-space-image');
-            const spaceTitle = document.getElementById('space-title');
-            const spaceDescription = document.getElementById('space-description');
-
-            thumbnails.forEach(thumbnail => {
-                thumbnail.addEventListener('click', () => {
-                    // Remove active class from all thumbnails
-                    thumbnails.forEach(t => t.classList.remove('active'));
-                    
-                    // Add active class to clicked thumbnail
-                    thumbnail.classList.add('active');
-
-                    // Update main image and details
-                    const newImageSrc = thumbnail.getAttribute('data-image');
-                    const newTitle = thumbnail.getAttribute('data-title');
-                    const newDescription = thumbnail.getAttribute('data-description');
-
-                    mainImage.src = newImageSrc;
-                    mainImage.alt = newTitle;
-                    spaceTitle.textContent = newTitle;
-                    spaceDescription.textContent = newDescription;
-                });
-            });
+        // Arrow navigation in hero section
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevArrow = document.querySelector('.arrow.prev');
+            const nextArrow = document.querySelector('.arrow.next');
+           
         });
     </script>
 </body>
